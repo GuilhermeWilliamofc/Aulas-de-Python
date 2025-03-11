@@ -10,3 +10,5 @@ aluno4 = input('Digite o Nome do Aluno 4: ')
 seqalunos = aluno1,aluno2,aluno3,aluno4
 
 print(f'A Ordem de Apresentação é:\n{sample(seqalunos, 4)}')
+
+# poderia utilizar a função shuffle do módulo random, não faço ideia de como sample deu certo
