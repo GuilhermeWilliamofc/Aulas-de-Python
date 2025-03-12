@@ -2,7 +2,7 @@ from emoji import emojize
 text = emojize(' Desafio 26 :cold_face: ')
 print(f'{text:=^30}')
 
-frase = input('Digite uma frase: ')
+frase = input('Digite uma frase: ').strip()
 frase = frase.lower()
 frasecount = frase.count('a')
 fraseprim_a = frase.find('a')
