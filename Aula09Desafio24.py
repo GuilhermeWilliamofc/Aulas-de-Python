@@ -2,10 +2,9 @@ from emoji import emojize
 text = emojize(' Desafio 24 :cold_face: ')
 print(f'{text:=^30}')
 
-cidade = input('Digite o Nome de uma Cidade: ').strip
+cidade = input('\033[33mDigite o Nome de uma Cidade: ').lower().strip().split()
 if cidade:
-    cidade = cidade.lower().split()
     if cidade[0] == 'santo':
-        print('A Cidade começa com Santo')
+        print('\033[32mA Cidade começa com Santo')
     else:
-        print('A Cidade não começa com Santo')
+        print('\033[31mA Cidade não começa com Santo')

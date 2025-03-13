@@ -1,4 +1,4 @@
-n1 = int(input('Digite um número: '))
+n1 = int(input('\033[33mDigite um número: '))
 n2 = int(input('Digite outro número: '))
 s = n1+n2
-print('A Soma entre {} e {} é igual a {}'.format(n1,n2,s))
+print('\033[32mA Soma entre {} e {} é igual a {}'.format(n1,n2,s))

@@ -1,4 +1,4 @@
-dia = input('Dia = ')
+dia = input('\033[34mDia = ')
 mês = input('Mês = ')
 ano = input('Ano = ')
-print('Você nasceu no dia', dia,'de', mês, 'de', ano, ' .', 'Correto?')
+print('\033[33mVocê nasceu no dia', dia,'de', mês, 'de', ano, ' .', 'Correto?')
