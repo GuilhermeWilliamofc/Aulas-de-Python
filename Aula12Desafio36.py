@@ -2,13 +2,12 @@ from emoji import emojize
 text = emojize(' Desafio 36 :cold_face: ')
 print(f'{text:=^30}')
 
-casa = int(input('\033[33mDigite o Valor da Casa: '))
-salario = int(input('Digite seu salário: '))
+casa = float(input('\033[33mDigite o Valor da Casa: '))
+salario = float(input('Digite seu salário: '))
 anos = int(input('Digite em quantos anos vai pagar: '))
-salariototal = salario * (anos * 12)
-meses = anos * 12
-prestacao = casa / meses
-if prestacao > salariototal * 0.30 + salariototal:
-    print('\033[31mSeu empréstimo foi negado, Você não pode financiar essa casa')
+prestacao = casa / (anos * 12)
+minimo = salario * 0.30
+if prestacao > minimo:
+    print(f'\033[31mSeu empréstimo foi negado, Você não pode financiar essa casa\nValor da casa: R${casa:.2f}\nAnos: {anos}\nValor da Prestação: R${prestacao:.2f}')
 else:
-    print('\033[32mSeu empréstimo foi aprovado, Você pode financiar esta casa')
+    print(f'\033[32mSeu empréstimo foi aprovado, Você pode financiar esta casa\nValor da casa: R${casa:.2f}\nAnos: {anos}\nValor da Prestação: R${prestacao:.2f}')
