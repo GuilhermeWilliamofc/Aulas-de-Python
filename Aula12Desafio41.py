@@ -7,9 +7,9 @@ ano = int(input('Digite seu ano de nascimento: '))
 idade = date.today().year - ano
 if idade <= 9:
     print(f'Sua Idade: {idade}\nSua Categoria: Mirim')
-elif idade <= 14 and idade > 9:
+elif idade <= 14:
     print(f'Sua Idade: {idade}\nSua Categoria: Infantil')
-elif idade <= 19 and idade > 14:
+elif idade <= 19:
     print(f'Sua Idade: {idade}\nSua Categoria: Júnior')
 elif idade == 20:
     print(f'Sua Idade: {idade}\nSua Categoria: Sênior')
