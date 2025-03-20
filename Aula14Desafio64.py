@@ -2,11 +2,10 @@ from emoji import emojize
 text = emojize(' Desafio 64 :cold_face: ')
 print(f'{text:=^30}')
 
-num = 0
-soma = 0
-conta = 0
+num = soma = conta = 0
+
 while not num == 999:
-    num = int(input('Digite um número: '))
+    num = int(input('Digite um número [999 para parar]: '))
     soma += 1
     conta += num
 

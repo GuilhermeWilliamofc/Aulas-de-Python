@@ -5,7 +5,7 @@ print(f'{text:=^30}')
 
 resposta = 's'
 while resposta == 's':
-    num = int(input('\033[33mDigite um Número: '))
+    num = int(input('\033[33mQuantos termos você quer mostrar? '))
     print(fibonacci(length = num))
     resposta = input('\033[32mDeseja digitar outro número? [S/N] ').lower().strip()
 print('\033[31mFim do Programa')
