@@ -21,5 +21,5 @@ while True:
 
 
 num.sort()
-print(f'\033[32mA lista é números é:\n{num}')
+print(f'\033[32mA lista de números é:\n{num}')
 print('\033[31mFim do Programa')
