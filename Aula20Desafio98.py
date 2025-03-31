@@ -3,7 +3,7 @@ from time import sleep
 text = emojize(' Desafio 98 :cold_face: ')
 print(f'{text:=^30}')
 
-def contador(a, b, c):
+def contador(a=0, b=0, c=0):
     print('\033[33m-' * 30)
     if c == 0:
         c = 1
