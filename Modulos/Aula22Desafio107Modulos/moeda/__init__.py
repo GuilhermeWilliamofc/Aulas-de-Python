@@ -26,11 +26,11 @@ def diminuirporcento(n = 0, p = 0, show=False):
     return por
 
 
-def formatacaomoeda(n = 0, sifrao = 'R$'):
-    n = f'{sifrao}{n:.2f}'.replace('.', ',')
+def formatacaomoeda(n = 0, cifrao = 'R$'):
+    n = f'{cifrao}{n:.2f}'.replace('.', ',')
     return n
 
-def resumo(n = 0, ap = 10, dp = 5, sifrao = 'R$'):
+def resumo(n = 0, ap = 10, dp = 5, cifrao = 'R$'):
 
     """Faz o Resumo dos valores em forma de tabela
 
@@ -38,7 +38,7 @@ def resumo(n = 0, ap = 10, dp = 5, sifrao = 'R$'):
         n (float): Valor desejado
         ap (float): % de Aumento
         dp (float): % de Redução
-        sifrao (str, optional): Muda o sifrão da moeda. 'R$' por padrão.
+        cifrao (str, optional): Muda o cifrão da moeda. 'R$' por padrão.
     """
 
     msg = 'Resumo do Valor'
@@ -57,14 +57,14 @@ def resumo(n = 0, ap = 10, dp = 5, sifrao = 'R$'):
     # \t pra tabular com mais facilidade
     print('-' * (len(msg) + 20))
     print(f'{dado1:<5}', end= ' ')
-    print(f'{formatacaomoeda(n, sifrao)}')
+    print(f'{formatacaomoeda(n, cifrao)}')
     print(f'{dado2:<5}', end= ' ')
-    print(f'{formatacaomoeda(dobro_n, sifrao)}')
+    print(f'{formatacaomoeda(dobro_n, cifrao)}')
     print(f'{dado3:<5}', end= ' ')
-    print(f'{formatacaomoeda(metade_n, sifrao)}')
+    print(f'{formatacaomoeda(metade_n, cifrao)}')
     print(f'{dado4:<5}', end= ' ')
-    print(f'{formatacaomoeda(aumento_n, sifrao)}')
+    print(f'{formatacaomoeda(aumento_n, cifrao)}')
     print(f'{dado5:<5}', end= ' ')
-    print(f'{formatacaomoeda(reducao_n, sifrao)}')
+    print(f'{formatacaomoeda(reducao_n, cifrao)}')
     print('-' * (len(msg) + 20))
 
